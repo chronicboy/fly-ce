@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Survival Flight utility for Better Than Wolves CE",
+  "authors": [
+    "chronicboy31"
+  ],
+  "license": "MIT",
+  "icon": "assets/${mod_id}/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "btw.community.fly.FlyMod"
+    ],
+    "btw:addon": [
+      "btw.community.fly.FlyAddon"
+    ]
+  },
+  "custom": {
+    "btw:addon_prefix": "FLY"
+  },
+  "mixins": [
+    "${mod_id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": "1.6.4"
+  }
+}
