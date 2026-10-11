@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "btw.community.fly.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityPlayerMixin",
+    "NetServerHandlerMixin"
+  ],
+  "client": [
+    "MinecraftMixin",
+    "NetClientHandlerMixin",
+    "GameSettingsMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
